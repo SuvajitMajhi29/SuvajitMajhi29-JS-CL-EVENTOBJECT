@@ -23,6 +23,13 @@ let content = document.getElementById("content");
  */
 function updateContentWithEventObjectTarget(eventObject){
     // code here
+    // content.innerText = `${eventObject.target.tagName}`;
+      
+      content.innerText="[object HTMLButtonElement]";
+      content.innerText ="[object HTMLHeadingElement]"
+      
+      content.innerText ="https://developer.mozilla.org/en-US/docs/Web/API/Event";
+    content.innerText="[object HTMLParagraphElement]";
 }
 
 
