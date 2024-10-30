@@ -21,17 +21,15 @@ let content = document.getElementById("content");
  * that target property can simply be retrieved via eventObject.target, so when you click on something on the page,
  * some information about the clicked element will be displayed.
  */
-function updateContentWithEventObjectTarget(eventObject){
+function updateContentWithEventObjectTarget(body){
     // code here
-    // content.innerText = `${eventObject.target.tagName}`;
-      
-      content.innerText="[object HTMLButtonElement]";
-      content.innerText ="[object HTMLHeadingElement]"
-      
-      content.innerText ="https://developer.mozilla.org/en-US/docs/Web/API/Event";
-    content.innerText="[object HTMLParagraphElement]";
-}
-
+    content.innerText = event.target.toString();
+    
+        
+    }
+    
+    
+   
 
 
 /* OPTIONAL PRACTICE: If you want more practice later, explore other properties of the Event object. Print some of the
